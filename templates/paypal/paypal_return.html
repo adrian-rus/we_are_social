@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+    <div class="container text-justify">
     <h1>Thanks for buying my item :)</h1>
 
     <h3>You have successfully paid $ {{ post.payment_gross }} to: {{ post.receiver_email }}.</h3>
     <h3> Your product is on its way.</h3>
-
+    <h3> Return to <a href="/">Home Page</a></h3>
+        </div>
 {% endblock %}

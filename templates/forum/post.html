@@ -1,14 +1,15 @@
 {% load staticfiles %}
 {% load emoticons_tags %}
 
-<section class="row comment col-md-9">
- <div class="col-md-3 comment-profile">
+<div class="row text-justify">
+ <div class="col-md-2 text-primary panel-heading">
    <p><img src="{% static 'images/user.png' %}" class="img-circle" /></p>
-   <p class="text-primary">{{ post.user.username }}</p>
-   <p class="text-primary">{{ post.user.posts.count }} POSTS</p>
+   <p>{{ post.user.username }}</p>
+   <p>{{ post.user.posts.count }} POSTS</p>
  </div>
- <div class="col-md-9 ">
-   <div class="comment-content">
+
+ <div class="col-md-8 panel-body">
+   <div>
      {% autoescape off %}
        {{ post.comment|emoticons }}
      {% endautoescape %}
@@ -18,4 +19,4 @@
 
  </div>
 
-</section>
+</div>

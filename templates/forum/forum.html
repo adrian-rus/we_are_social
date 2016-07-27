@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 {%  load thread_extras %}
 {% block content %}
+    <div class="row intro">
+    <div class="container">
+        <h1>Forum</h1>
+        </div>
+    </div>
     {% load bootstrap_tags %}
     {% for subject in subjects %}
-        <section class="subject">
+        <div class="container text-justify" id="forum">
             <h2><a href="{% url "threads" subject.id %}">{{  subject.name }}</a></h2>
             <p>
                 <a href="{% url 'threads' subject.id %}">
@@ -12,7 +17,8 @@
                     {% endautoescape %}
                 </a>
             </p>
-            <table class="table table-bordered">
+        <div class="table-responsive">
+            <table class="table table-striped">
                 <tr>
                     <th>THREADS</th>
                     <th>POSTS</th>
@@ -22,6 +28,7 @@
                     <td> {{ subject|get_total_subject_posts }}</td>
                 </tr>
             </table>
-        </section>
+        </div>
+        </div>
     {% endfor %}
 {% endblock %}

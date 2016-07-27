@@ -1,17 +1,45 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-    <div class="container">
-    <h2>Please create a new account below:</h2>
 
-    <form role="form" method="post" action="{% url 'register' %}">
-
-        <legend>Sign up:</legend>
-        {% csrf_token %}
-        {{ form| as_bootstrap }}
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Create account</button>
+    <div class="row intro">
+        <div class="container">
+            <h1>Register</h1>
         </div>
-    </form>
+    </div>
+
+    <div class="container text-justify" >
+        <div class="row">
+            <h2>Please create a new account below:</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+
+                <form role="form" method="post" action="{% url 'register' %}">
+
+                <legend>Sign up form:</legend>
+                {% csrf_token %}
+                {{ form| as_bootstrap }}
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Create account</button>
+                     </div>
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <h2>We support the leading social entrepreneurs to change Ireland, but we can’t do it alone.</h2>
+                <p>
+                    As the number of challenges rises in Ireland, the need for innovative solutions to these
+                    challenges grows more and more important. We can’t wait for these ideas to scale and grow; these
+                    social entrepreneurs need support now so that they can bring these solutions to scale as quickly
+                    as possible.
+                </p>
+                <p>
+                    If you would like to be a part of this change in Ireland, we’d invite you to join us on the journey.
+                    Please register today!
+                </p>
+
+            </div>
+            </div>
     </div>
 {% endblock %}

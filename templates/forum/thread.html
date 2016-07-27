@@ -2,12 +2,17 @@
 {% load staticfiles %}
 {% load thread_extras %}
 {% block content %}
-
- <div class="row header">
-     <div class="container">
+    <div class="row intro">
+    <div class="container">
          <h2>{{ thread.name }}</h2>
-         <div class="col-md-12">
-             <table class="table">
+        </div>
+     </div>
+
+ <div class="container">
+     <div class="row text-justify">
+
+         <div class="col-md-12 table-responsive">
+             <table class="table table-striped">
                  <tbody>
                  <tr class="text-info">
                      <th>CREATED</th>
@@ -27,7 +32,7 @@
             </table>
         </div>
        {% if thread.poll %}
-           <div class="container">
+           <div class="container text-justify">
                <div class="col-md-6">
                    <h2>Poll</h2>
                    <strong> {{ thread.poll.question }}</strong><br><br>
