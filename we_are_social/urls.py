@@ -29,6 +29,8 @@ from threads import api_views as thread_api_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
+    url(r'^about/', views.get_about, name='about'),
+    url(r'^contact/', views.get_contact, name='contact'),
 
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),

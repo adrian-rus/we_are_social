@@ -22,7 +22,7 @@ def register(request):
                 return redirect(reverse('profile'))
 
             else:
-                messages.error(request, "unable to log you in at this time!")
+                messages.error(request, "Unable to log you in at this time! Please try again.")
 
     else:
         form = UserRegistrationForm()
@@ -47,10 +47,10 @@ def login(request):
 
             if user is not None:
                 auth.login(request, user)
-                messages.error(request, "You have successfully logged in")
+                messages.error(request, "You have successfully logged in.")
                 return redirect(reverse('profile'))
             else:
-                form.add_error(None, "Your email or password was not recognised")
+                form.add_error(None, "Your email or password was not recognised. Please try again.")
 
     else:
         form = UserLoginForm()
@@ -62,5 +62,5 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    messages.success(request, 'You have successfully logged out')
+    messages.success(request, 'You have successfully logged out. See you soon!')
     return render(request, 'index.html')

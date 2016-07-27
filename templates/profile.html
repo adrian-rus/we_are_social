@@ -1,12 +1,15 @@
 {% extends "base.html" %}
+{% load bootstrap_tags %}
 {% block content %}
+
 <div class="container">
     <div class="row">
     <h2> Welcome {{ user.first_name }}!</h2>
     <p> You are logged in as {{ user.email }} </p>
     </div>
     <div class="row">
-    <p> You last login on {{ user.last_login }}</p>
+    <p> Your last login was on {{ user.last_login }}</p>
     </div>
+
 </div>
 {% endblock %}

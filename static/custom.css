@@ -1,8 +1,30 @@
+body{
+    font-family: 'Lato', SansSerif;
+}
+
+.navbar-inverse{
+    font-weight: bolder;
+}
+
+#contact{
+    padding: 30px 0;
+}
+
+#googleMap{
+    min-height: 320px;
+}
+
 #intro{
     background-color: #85bfea;
     display: block;
     align-items: center;
     padding: 30px 0;
+    background: url("/static/images/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 2px #000;
 }
 
 #pic1{
@@ -12,8 +34,43 @@
 
 #weare{
     padding:30px 0;
+    text-align: justify;
 }
 #weare i{
     font-size: 80px;
     color: #85bfea;
+}
+
+#whatis{
+    background-color: #1b6d85;
+    color: #fff;
+    padding: 30px 0;
+}
+
+#whatis i{
+    font-size: 80px;
+    color:#fff;
+}
+
+#whatis p{
+    text-align: justify;
+}
+
+#footer{
+    background-color: #fff;
+    color: #878787;
+    padding: 30px 0px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer i{
+    font-size: 40px;
+}
+
+#footer p{
+    text-align: justify;
 }
