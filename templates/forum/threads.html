@@ -5,22 +5,30 @@
     <div class="row intro">
         <div class="container">
             <h1> {{ subject.name }}</h1>
+            <p> Please see below all threads on {{ subject.name }}</p>
         </div>
     </div>
+
     <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-        {%  if user.is_authenticated %}
-                            <a href="{% url 'new_thread' subject.id %}"
-                   class="btn btn-primary">
-                    New Thread
+        <div class="row">
+            <div class="col-md-12 thread-btns">
+            {%  if user.is_authenticated %}
+                <a  href="{% url 'new_thread' subject.id %}" class="btn btn-primary">
+                    Add New Thread
                 </a>
-        {% endif %}
-        {%  for thread in subject.threads.all %}
+            {% endif %}
+                <a href="{% url 'forum' %}" class="btn btn-danger">
+                    Go Back to Forum
+                </a>
+            </div>
+            <div class="col-md-12">
+            {%  for thread in subject.threads.all %}
 
             {% include "forum/thread_item.html" %}
-        {% endfor %}
-    </div>
-    </div>
+
+            {% endfor %}
+            </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

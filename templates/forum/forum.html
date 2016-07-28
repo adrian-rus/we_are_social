@@ -6,22 +6,29 @@
         <h1>Forum</h1>
         </div>
     </div>
+    <div class="row">
+    <div class="container">
+        <h2>This is our forum where ideas come together!</h2>
+        <p> Please click or tap on the subjects to check out our latest posts.</p>
+        <hr>
+    </div>
+    </div>
     {% load bootstrap_tags %}
     {% for subject in subjects %}
         <div class="container text-justify" id="forum">
             <h2><a href="{% url "threads" subject.id %}">{{  subject.name }}</a></h2>
-            <p>
+            <p><strong>
                 <a href="{% url 'threads' subject.id %}">
                     {% autoescape off %}
                     {{ subject.description }}
                     {% endautoescape %}
                 </a>
-            </p>
+            </strong></p>
         <div class="table-responsive">
             <table class="table table-striped">
                 <tr>
-                    <th>THREADS</th>
-                    <th>POSTS</th>
+                    <th>Threads</th>
+                    <th>Posts</th>
                 </tr>
                 <tr>
                     <td>{{ subject.threads.count }}</td>

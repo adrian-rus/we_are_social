@@ -22,9 +22,19 @@ body{
 
 }
 
-#forum{
+#forum a{
     text-decoration: none;
-    color:inherit;
+    color: #000;
+}
+
+
+#thread-item a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.thread-btns, #new-thread {
+    padding: 10px;
 }
 
 #login i{

@@ -7,6 +7,22 @@
         </div>
     </div>
 
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Need inspiration?</h2>
+            <p>
+                Have a quick look below and check out the best magazines in Business and Entrepreneurship.
+            </p>
+            <p> They will inspire you and 25% of the subscription price will go to our Social Funds.</p>
+            <p> All magazines have a monthly re-occuring payment.</p>
+            <h4> Happy Reading! </h4>
+            <hr>
+        </div>
+
+    </div>
+    </div>
+
     <div class="container table-responsive">
     <table class="table table-striped">
         <thead>
@@ -23,7 +39,7 @@
             <tr>
             <td>{{ magazine.name }}</td>
             <td>{{ magazine.description }}</td>
-            <td>${{ magazine.price }}</td>
+            <td>€ {{ magazine.price }}</td>
             <td>{% paypal_form_for magazine user %}</td>
             </tr>
             {% endfor %}

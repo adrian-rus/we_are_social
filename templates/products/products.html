@@ -5,6 +5,21 @@
     <h1>Products</h1>
         </div>
     </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Must haves</h2>
+            <p>
+                Have a quick look below and grab one of the products.
+            </p>
+            <p> They will help you on your daily tasks and 25% of the sale will go to our Social Funds.</p>
+            <p> All products come with 1 year warranty.</p>
+            <h4> Happy Shopping! </h4>
+            <hr>
+        </div>
+
+    </div>
+    </div>
     <div class="container table-responsive">
     <table class="table table-striped">
         <thead>
@@ -20,7 +35,7 @@
                 <tr>
                     <td>{{ product.name }}</td>
                     <td>{{ product.description }}</td>
-                    <td>${{ product.price }}</td>
+                    <td>€ {{ product.price }}</td>
                     <td>{{ product.paypal_form.sandbox }}</td>
                 </tr>
             {% endfor %}

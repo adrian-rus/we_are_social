@@ -2,18 +2,18 @@
 {% load emoticons_tags %}
 
 <div class="row text-justify">
- <div class="col-md-2 text-primary panel-heading">
+ <div class="col-md-4 text-primary">
    <p><img src="{% static 'images/user.png' %}" class="img-circle" /></p>
    <p>{{ post.user.username }}</p>
-   <p>{{ post.user.posts.count }} POSTS</p>
+   <p>{{ post.user.posts.count }} Posts </p>
  </div>
 
- <div class="col-md-8 panel-body">
-   <div>
+ <div class="col-md-8">
+
      {% autoescape off %}
        {{ post.comment|emoticons }}
      {% endautoescape %}
-   </div>
+
 
    {% include "forum/comment_details.html" %}
 

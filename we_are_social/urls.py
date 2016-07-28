@@ -24,6 +24,7 @@ from magazines import views as magazines_views
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
+from reusable_blog import views as blog_views
 
 
 urlpatterns = [
@@ -32,8 +33,11 @@ urlpatterns = [
     url(r'^about/', views.get_about, name='about'),
     url(r'^contact/', views.get_contact, name='contact'),
 
+    #blog URLs
+    url(r'^post/$', blog_views.new_post, name='new-blog-post'),
+
     # Auth URLs
-    url(r'^pages/', include('django.contrib.flatpages.urls')),
+    # url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^register/$', register, name='register'),
     url(r'^profile/$', profile, name='profile'),
     url(r'^login/$', login, name='login'),
@@ -50,7 +54,7 @@ urlpatterns = [
     url(r'^blog/', include('reusable_blog.urls')),
 
     # Forum URLs
-    url(r'^forum/$', forum_views.forum),
+    url(r'^forum/$', forum_views.forum, name='forum'),
     url(r'^threads/(?P<subject_id>\d+)/$', forum_views.threads, name='threads'),
     url(r'^new_thread/(?P<subject_id>\d+)/$', forum_views.new_thread, name='new_thread'),
     url(r'^thread/(?P<thread_id>\d+)/$', forum_views.thread, name='thread'),
