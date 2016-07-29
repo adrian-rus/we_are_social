@@ -14,3 +14,4 @@ stripe
 git+https://github.com/adrian-rus/reusable_blog_app.git
 django-tinymce==2.3.0
 django-debug-toolbar==1.4.0
+django-paypal==0.3.2

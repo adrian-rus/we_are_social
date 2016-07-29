@@ -6,28 +6,50 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
 
+from django.conf import settings
+import datetime
+import stripe
 
-# Create your views here.
+
+stripe.api_key = settings.STRIPE_SECRET
+
+
 def register(request):
+
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
+
         if form.is_valid():
-            form.save()
+            try:
+                customer = stripe.Charge.create(
+                    amount=499,
+                    currency='EUR',
+                    description=form.cleaned_data['email'],
+                    card=form.cleaned_data['stripe_id'],
+                )
+            except stripe.error.CardError, e:
+                messages.error(request, 'Your card was declined!')
+            if customer.paid:
+                form.save()
 
             user = auth.authenticate(email=request.POST.get('email'),
-                                     password=request.POST.get('password1'))
+                                    password=request.POST.get('password1'))
 
             if user:
+                auth.login(request, user)
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('profile'))
 
             else:
                 messages.error(request, "Unable to log you in at this time! Please try again.")
 
+        else:
+            messages.error(request, 'We were unable to take a payment with that card. Please try another card.')
     else:
+        today = datetime.date.today()
         form = UserRegistrationForm()
 
-    args = {'form': form}
+    args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE}
     args.update(csrf(request))
 
     return render(request, 'register.html', args)

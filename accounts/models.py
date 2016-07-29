@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-
 from django.contrib.auth.models import AbstractUser, UserManager
 from django.db import models
 from django.utils import timezone
@@ -32,6 +31,7 @@ class User(AbstractUser):
     # number of custom attribute to our user class
 
     # in later units we'll be adding things like payment details!
+    stripe_id = models.CharField(max_length=40, default='')
 
     objects = AccountUserManager()
 
