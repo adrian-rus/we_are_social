@@ -22,9 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '_34saw!bco()q8$4(_5iyik-+nmr+u7jrsfywjq)guc9+j%==c'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 SITE_ID = 4
 
@@ -40,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django_forms_bootstrap',
-    'debug_toolbar',
     'tinymce',
     'emoticons',
     'home',
@@ -97,17 +93,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'we_are_social.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
@@ -151,20 +136,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-# PayPal settings
-SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'adrian.rus.business@live.com'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Disqus settings
-DISQUS_WEBSITE_SHORTNAME = 'test store'
-
 # Tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js" )
-
-# Stripe settings
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_rskSLj07vIpHRYDRspDOXGZO')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_WJMXImKmYIpgK3HvCuM9vgg4')
