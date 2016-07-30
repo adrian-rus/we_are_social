@@ -11,7 +11,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default']=dj_database_url.config('mysql://bd17ceb78ee92c:3a85e760@eu-cdbr-west-01.cleardb.com/heroku_aa572bd70e66304?reconnect=true')
+DATABASES['default'] = dj_database_url.config('mysql://b84bfa1e8d5e71:1c88a16b@eu-cdbr-west-01.cleardb.com/heroku_54e64eee9090d14?reconnect=true')
 
 # PayPal settings
 SITE_URL = 'https://we-are-social.herokuapp.com/'
