@@ -1,6 +1,8 @@
 from base import *
+import dj_database_url
 
 DEBUG = True
+
 
 DATABASES = {
     'default': {
@@ -8,6 +10,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+DATABASES['default']=dj_database_url.config('mysql://bd17ceb78ee92c:3a85e760@eu-cdbr-west-01.cleardb.com/heroku_aa572bd70e66304?reconnect=true')
 
 # PayPal settings
 SITE_URL = 'https://we-are-social.herokuapp.com/'

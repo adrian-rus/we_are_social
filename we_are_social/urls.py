@@ -30,8 +30,8 @@ from reusable_blog import views as blog_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
-    url(r'^about/', views.get_about, name='about'),
-    url(r'^contact/', views.get_contact, name='contact'),
+    url(r'^about/$', views.get_about, name='about'),
+    url(r'^contact/$', views.get_contact, name='contact'),
 
     #blog URLs
     url(r'^post/$', blog_views.new_post, name='new-blog-post'),
