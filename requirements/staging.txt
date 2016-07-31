@@ -1,3 +1,2 @@
 - r base.txt
-mySQL-python==1.2.3
-dj-database-url==0.2.1
+mysql-python==1.2.5
