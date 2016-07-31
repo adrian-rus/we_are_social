@@ -3,7 +3,6 @@ import dj_database_url
 
 DEBUG = True
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
