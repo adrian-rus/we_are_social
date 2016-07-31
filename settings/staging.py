@@ -4,13 +4,6 @@ import settings
 
 DEBUG = True
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
-    }
-}
-
 DATABASES['default'] = dj_database_url.config(
     'mysql://b84bfa1e8d5e71:1c88a16b@eu-cdbr-west-01.cleardb.com/heroku_54e64eee9090d14?reconnect=true')
 
