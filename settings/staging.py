@@ -1,6 +1,6 @@
 from base import *
 import dj_database_url
-import settings
+from we_are_social.settings import DATABASES
 
 DEBUG = True
 
