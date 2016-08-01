@@ -57,14 +57,6 @@
 },
 {
     "model": "sites.site",
-    "pk": 3,
-    "fields": {
-        "domain": "example.com",
-        "name": "example.com"
-    }
-},
-{
-    "model": "sites.site",
     "pk": 4,
     "fields": {
         "domain": "localhost:8000",
@@ -73,6 +65,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$20000$clfExk7lx4TZ$cX6lUNOjpnTut+Ubee3tCjyT3kLJQMn8Yv4L00B5fRg=",
         "last_login": "2016-07-30T17:43:23.522Z",
@@ -91,6 +84,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$24000$UU7Q3EE5Gdtv$fg0FfUDD7VXqUw6jrvbGHhzB2epRlzsUipcEwd2lKto=",
         "last_login": "2016-07-27T17:34:41.483Z",
@@ -109,6 +103,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$24000$A75B04PywEPy$hTAPbnohpS6E4d31HowCUFYIywts/IvexDasgS23g5A=",
         "last_login": "2016-07-15T11:29:52.158Z",
@@ -127,6 +122,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$24000$BxvLRrqOvHGF$UgwtdnU9bTTT3FZ6sl8U1/XHYY2tm3rj0b4TzOtDrII=",
         "last_login": "2016-07-14T12:36:56.444Z",
@@ -145,6 +141,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 5,
     "fields": {
         "password": "pbkdf2_sha256$24000$wnINgGa0lyzX$2re/oGzQUyBSpdi/EsMsjSA65MAoFTIWHMvLg5se03c=",
         "last_login": "2016-07-28T12:23:54.365Z",
@@ -163,6 +160,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 6,
     "fields": {
         "password": "pbkdf2_sha256$24000$EPogiY4yqjGA$Ye/op1AFfy2aC6SWbGaFCgsirmvE8AQph+f5Wat5pgA=",
         "last_login": "2016-07-28T11:33:05.767Z",
@@ -181,6 +179,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 7,
     "fields": {
         "password": "pbkdf2_sha256$20000$4FjUKg9lOxp4$dgFwe+vDHjkMcLz913KwQhlu6fJeyWPYYiz+14NdyaI=",
         "last_login": "2016-07-29T11:05:19.144Z",
@@ -199,6 +198,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 8,
     "fields": {
         "password": "pbkdf2_sha256$24000$M0tHYIFMmvWp$XaEeo+ygOlVlU44pISF+gLU0Xh0U2RTmS+LyOAfc7Ak=",
         "last_login": null,
@@ -217,6 +217,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$24000$QozLO1yxOJ4A$1xyiu1FDhfrd5FliVepjwbScbPACUDaHPDj/CWAaIZo=",
         "last_login": "2016-07-29T10:09:14.510Z",
@@ -235,6 +236,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 10,
     "fields": {
         "password": "pbkdf2_sha256$24000$rnghG0rWQCKv$Dpwu/fTGERfNzsQgDTVhF/FVvB3WBPwSKzqYzTMW8AE=",
         "last_login": null,
@@ -253,6 +255,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 11,
     "fields": {
         "password": "pbkdf2_sha256$24000$Oda7o1yMO3lF$aiWFb0qJ2A223dIsGjmpa/yJfCDMIS9mLHjcB9I+3t4=",
         "last_login": "2016-07-29T10:12:31.581Z",
@@ -271,6 +274,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 12,
     "fields": {
         "password": "pbkdf2_sha256$24000$m0LTJIefNIvo$OEOauFJ4R2w9AaXMp3MuKywTSSX9wVoOoRDqSH+rWFc=",
         "last_login": "2016-07-29T10:20:43.343Z",
@@ -354,7 +358,9 @@
     "model": "reusable_blog.post",
     "pk": 1,
     "fields": {
-        "author": 1,
+        "author": [
+            "admin@mail.com"
+        ],
         "title": "Blog post 1",
         "content": "Blog post 1\r\nBlog post 1\r\nBlog post 1\r\nBlog post 1\r\nBlog post 1",
         "created_date": "2016-07-12T12:36:53.010Z",
@@ -368,7 +374,9 @@
     "model": "reusable_blog.post",
     "pk": 2,
     "fields": {
-        "author": 2,
+        "author": [
+            "admin1@mail.com"
+        ],
         "title": "Blog post 2",
         "content": "Blog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2",
         "created_date": "2016-07-12T12:37:35.128Z",
@@ -382,7 +390,9 @@
     "model": "reusable_blog.post",
     "pk": 3,
     "fields": {
-        "author": 1,
+        "author": [
+            "admin@mail.com"
+        ],
         "title": "Blog post 3",
         "content": "Blog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3",
         "created_date": "2016-07-28T09:30:45.988Z",
@@ -396,7 +406,9 @@
     "model": "reusable_blog.post",
     "pk": 4,
     "fields": {
-        "author": 1,
+        "author": [
+            "admin@mail.com"
+        ],
         "title": "Blog post 4",
         "content": "Blog post 4 Blog post 4Blog post 4 Blog post 4 Blog post 4",
         "created_date": "2016-07-28T13:40:34.050Z",
@@ -419,7 +431,9 @@
     "pk": 6,
     "fields": {
         "name": "Test Thread 2",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-07-04T23:56:18.339Z"
     }
@@ -429,7 +443,9 @@
     "pk": 7,
     "fields": {
         "name": "Cars",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-07-13T09:33:45.974Z"
     }
@@ -439,7 +455,9 @@
     "pk": 8,
     "fields": {
         "name": "Video Games",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-07-13T10:50:58.762Z"
     }
@@ -449,7 +467,9 @@
     "pk": 9,
     "fields": {
         "name": "Phones",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-07-15T11:23:26.284Z"
     }
@@ -459,7 +479,9 @@
     "pk": 10,
     "fields": {
         "name": "Laptops",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-07-26T10:46:20.527Z"
     }
@@ -470,7 +492,9 @@
     "fields": {
         "thread": 6,
         "comment": "<p>Hey World, how are things?</p>\r\n<p>:D B)</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-04T23:56:18.339Z"
     }
 },
@@ -480,7 +504,9 @@
     "fields": {
         "thread": 7,
         "comment": "<p>Cars</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-13T09:33:45.974Z"
     }
 },
@@ -490,7 +516,9 @@
     "fields": {
         "thread": 7,
         "comment": "<p>This is interesting</p>",
-        "user": 3,
+        "user": [
+            "admin2@mail.com"
+        ],
         "created_at": "2016-07-13T10:30:59.182Z"
     }
 },
@@ -500,7 +528,9 @@
     "fields": {
         "thread": 8,
         "comment": "<p>Which is the best video game?</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-13T10:50:58.762Z"
     }
 },
@@ -510,7 +540,9 @@
     "fields": {
         "thread": 8,
         "comment": "<p>Gta 5</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-13T11:15:16.722Z"
     }
 },
@@ -520,7 +552,9 @@
     "fields": {
         "thread": 8,
         "comment": "<p>I'd say the witcher</p>",
-        "user": 2,
+        "user": [
+            "admin1@mail.com"
+        ],
         "created_at": "2016-07-14T13:12:19.185Z"
     }
 },
@@ -530,7 +564,9 @@
     "fields": {
         "thread": 8,
         "comment": "<p>The witcher :D</p>",
-        "user": 3,
+        "user": [
+            "admin2@mail.com"
+        ],
         "created_at": "2016-07-14T13:13:25.528Z"
     }
 },
@@ -540,7 +576,9 @@
     "fields": {
         "thread": 9,
         "comment": "<p>Phones - best of 2016</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-15T11:23:26.284Z"
     }
 },
@@ -550,7 +588,9 @@
     "fields": {
         "thread": 7,
         "comment": "<p>worked like a charm :D</p>",
-        "user": 2,
+        "user": [
+            "admin1@mail.com"
+        ],
         "created_at": "2016-07-18T13:06:22.268Z"
     }
 },
@@ -560,7 +600,9 @@
     "fields": {
         "thread": 10,
         "comment": "<p>laptops</p>",
-        "user": 1,
+        "user": [
+            "admin@mail.com"
+        ],
         "created_at": "2016-07-26T10:46:20.527Z"
     }
 },
@@ -570,7 +612,9 @@
     "fields": {
         "thread": 6,
         "comment": "<p>YOLO</p>",
-        "user": 2,
+        "user": [
+            "admin1@mail.com"
+        ],
         "created_at": "2016-07-26T12:57:00.507Z"
     }
 },
@@ -580,7 +624,9 @@
     "fields": {
         "thread": 8,
         "comment": "<p>I voted Witcher ;) B)</p>",
-        "user": 6,
+        "user": [
+            "admin123@mail.com"
+        ],
         "created_at": "2016-07-27T18:12:13.621Z"
     }
 },
@@ -590,7 +636,9 @@
     "fields": {
         "thread": 6,
         "comment": "<p>hello! :)</p>",
-        "user": 5,
+        "user": [
+            "admin5@mail.com"
+        ],
         "created_at": "2016-07-28T12:37:09.440Z"
     }
 },
@@ -728,7 +776,9 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": 4
+        "user": [
+            "admin3@mail.com"
+        ]
     }
 },
 {
@@ -737,7 +787,9 @@
     "fields": {
         "poll": 1,
         "subject": 2,
-        "user": 3
+        "user": [
+            "admin2@mail.com"
+        ]
     }
 },
 {
@@ -746,7 +798,9 @@
     "fields": {
         "poll": 1,
         "subject": 3,
-        "user": 1
+        "user": [
+            "admin@mail.com"
+        ]
     }
 },
 {
@@ -755,7 +809,9 @@
     "fields": {
         "poll": 2,
         "subject": 4,
-        "user": 1
+        "user": [
+            "admin@mail.com"
+        ]
     }
 },
 {
@@ -764,7 +820,9 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": 2
+        "user": [
+            "admin1@mail.com"
+        ]
     }
 },
 {
@@ -773,7 +831,9 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": 3
+        "user": [
+            "admin2@mail.com"
+        ]
     }
 },
 {
@@ -782,7 +842,9 @@
     "fields": {
         "poll": 3,
         "subject": 7,
-        "user": 1
+        "user": [
+            "admin@mail.com"
+        ]
     }
 },
 {
@@ -791,7 +853,9 @@
     "fields": {
         "poll": 3,
         "subject": 8,
-        "user": 2
+        "user": [
+            "admin1@mail.com"
+        ]
     }
 },
 {
@@ -800,7 +864,9 @@
     "fields": {
         "poll": 3,
         "subject": 7,
-        "user": 3
+        "user": [
+            "admin2@mail.com"
+        ]
     }
 },
 {
@@ -809,7 +875,9 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": 2
+        "user": [
+            "admin1@mail.com"
+        ]
     }
 },
 {
@@ -818,7 +886,9 @@
     "fields": {
         "poll": 4,
         "subject": 11,
-        "user": 1
+        "user": [
+            "admin@mail.com"
+        ]
     }
 },
 {
@@ -827,7 +897,9 @@
     "fields": {
         "poll": 4,
         "subject": 12,
-        "user": 2
+        "user": [
+            "admin1@mail.com"
+        ]
     }
 },
 {
@@ -836,7 +908,9 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": 6
+        "user": [
+            "admin123@mail.com"
+        ]
     }
 },
 {
@@ -845,7 +919,9 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": 6
+        "user": [
+            "admin123@mail.com"
+        ]
     }
 },
 {
@@ -854,7 +930,9 @@
     "fields": {
         "poll": 4,
         "subject": 11,
-        "user": 6
+        "user": [
+            "admin123@mail.com"
+        ]
     }
 },
 {
@@ -863,7 +941,9 @@
     "fields": {
         "poll": 2,
         "subject": 6,
-        "user": 5
+        "user": [
+            "admin5@mail.com"
+        ]
     }
 },
 {
@@ -871,8 +951,13 @@
     "pk": 1,
     "fields": {
         "action_time": "2016-07-04T15:46:17.800Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "1",
         "object_repr": "Wired UK",
         "action_flag": 1,
@@ -884,8 +969,13 @@
     "pk": 2,
     "fields": {
         "action_time": "2016-07-04T15:46:35.642Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "2",
         "object_repr": "PC World",
         "action_flag": 1,
@@ -897,8 +987,13 @@
     "pk": 3,
     "fields": {
         "action_time": "2016-07-04T15:46:58.768Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "3",
         "object_repr": "Stuff",
         "action_flag": 1,
@@ -910,8 +1005,13 @@
     "pk": 4,
     "fields": {
         "action_time": "2016-07-04T15:47:42.191Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "1",
         "object_repr": "Laptop",
         "action_flag": 1,
@@ -923,8 +1023,13 @@
     "pk": 5,
     "fields": {
         "action_time": "2016-07-04T15:48:07.372Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "2",
         "object_repr": "Smartphone",
         "action_flag": 1,
@@ -936,8 +1041,13 @@
     "pk": 6,
     "fields": {
         "action_time": "2016-07-04T15:48:32.060Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "3",
         "object_repr": "Phone cover",
         "action_flag": 1,
@@ -949,8 +1059,13 @@
     "pk": 7,
     "fields": {
         "action_time": "2016-07-04T15:48:49.426Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "4",
         "object_repr": "Tablet",
         "action_flag": 1,
@@ -962,8 +1077,13 @@
     "pk": 8,
     "fields": {
         "action_time": "2016-07-04T15:49:14.686Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "1",
         "object_repr": "Testing",
         "action_flag": 1,
@@ -975,8 +1095,13 @@
     "pk": 9,
     "fields": {
         "action_time": "2016-07-04T15:49:27.920Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "2",
         "object_repr": "AOB",
         "action_flag": 1,
@@ -988,8 +1113,13 @@
     "pk": 10,
     "fields": {
         "action_time": "2016-07-04T15:49:46.783Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "3",
         "object_repr": "Develop",
         "action_flag": 1,
@@ -1001,8 +1131,13 @@
     "pk": 11,
     "fields": {
         "action_time": "2016-07-04T23:55:40.061Z",
-        "user": 1,
-        "content_type": 15,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "thread"
+        ],
         "object_id": "5",
         "object_repr": "Thread object",
         "action_flag": 3,
@@ -1014,8 +1149,13 @@
     "pk": 12,
     "fields": {
         "action_time": "2016-07-12T12:34:07.956Z",
-        "user": 1,
-        "content_type": 15,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "thread"
+        ],
         "object_id": "1",
         "object_repr": "Thread object",
         "action_flag": 3,
@@ -1027,8 +1167,13 @@
     "pk": 13,
     "fields": {
         "action_time": "2016-07-12T12:36:53.017Z",
-        "user": 1,
-        "content_type": 13,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
         "object_id": "1",
         "object_repr": "Blog post 1",
         "action_flag": 1,
@@ -1040,8 +1185,13 @@
     "pk": 14,
     "fields": {
         "action_time": "2016-07-12T12:37:35.155Z",
-        "user": 1,
-        "content_type": 13,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
         "object_id": "2",
         "object_repr": "Blog post 2",
         "action_flag": 1,
@@ -1053,8 +1203,13 @@
     "pk": 15,
     "fields": {
         "action_time": "2016-07-14T13:20:07.769Z",
-        "user": 1,
-        "content_type": 6,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
         "object_id": "4",
         "object_repr": "localhost",
         "action_flag": 1,
@@ -1066,8 +1221,13 @@
     "pk": 16,
     "fields": {
         "action_time": "2016-07-14T13:20:20.451Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/about/ -- About",
         "action_flag": 1,
@@ -1079,8 +1239,13 @@
     "pk": 17,
     "fields": {
         "action_time": "2016-07-14T13:21:29.933Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/contact/ -- Contact",
         "action_flag": 1,
@@ -1092,8 +1257,13 @@
     "pk": 18,
     "fields": {
         "action_time": "2016-07-14T13:27:03.113Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/pages/about/ -- About",
         "action_flag": 2,
@@ -1105,8 +1275,13 @@
     "pk": 19,
     "fields": {
         "action_time": "2016-07-14T13:27:13.660Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/pages/contact/ -- Contact",
         "action_flag": 2,
@@ -1118,8 +1293,13 @@
     "pk": 20,
     "fields": {
         "action_time": "2016-07-14T13:36:08.195Z",
-        "user": 1,
-        "content_type": 6,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
         "object_id": "4",
         "object_repr": "localhost:8000",
         "action_flag": 2,
@@ -1131,8 +1311,13 @@
     "pk": 21,
     "fields": {
         "action_time": "2016-07-26T13:03:10.990Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/pages/about/ -- <h2>About</h2>",
         "action_flag": 2,
@@ -1144,8 +1329,13 @@
     "pk": 22,
     "fields": {
         "action_time": "2016-07-26T13:03:56.494Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 2,
@@ -1157,8 +1347,13 @@
     "pk": 23,
     "fields": {
         "action_time": "2016-07-26T13:05:34.367Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1170,8 +1365,13 @@
     "pk": 24,
     "fields": {
         "action_time": "2016-07-27T14:00:54.837Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 2,
@@ -1183,8 +1383,13 @@
     "pk": 25,
     "fields": {
         "action_time": "2016-07-27T14:04:50.926Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1196,8 +1401,13 @@
     "pk": 26,
     "fields": {
         "action_time": "2016-07-27T14:07:11.040Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1209,8 +1419,13 @@
     "pk": 27,
     "fields": {
         "action_time": "2016-07-27T14:20:22.436Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 3,
@@ -1222,8 +1437,13 @@
     "pk": 28,
     "fields": {
         "action_time": "2016-07-27T14:20:31.178Z",
-        "user": 1,
-        "content_type": 7,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 3,
@@ -1235,8 +1455,13 @@
     "pk": 29,
     "fields": {
         "action_time": "2016-07-27T18:00:05.523Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "3",
         "object_repr": "Develop",
         "action_flag": 3,
@@ -1248,8 +1473,13 @@
     "pk": 30,
     "fields": {
         "action_time": "2016-07-27T18:00:05.646Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "2",
         "object_repr": "AOB",
         "action_flag": 3,
@@ -1261,8 +1491,13 @@
     "pk": 31,
     "fields": {
         "action_time": "2016-07-28T10:44:08.664Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "3",
         "object_repr": "Social Power",
         "action_flag": 2,
@@ -1274,8 +1509,13 @@
     "pk": 32,
     "fields": {
         "action_time": "2016-07-28T10:44:29.738Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "2",
         "object_repr": "Entrepreneur",
         "action_flag": 2,
@@ -1287,8 +1527,13 @@
     "pk": 33,
     "fields": {
         "action_time": "2016-07-28T10:44:43.193Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "1",
         "object_repr": "Business UK",
         "action_flag": 2,
@@ -1300,8 +1545,13 @@
     "pk": 34,
     "fields": {
         "action_time": "2016-07-28T10:45:30.555Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "4",
         "object_repr": "Tablet",
         "action_flag": 2,
@@ -1313,8 +1563,13 @@
     "pk": 35,
     "fields": {
         "action_time": "2016-07-28T10:45:51.247Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "3",
         "object_repr": "Phone cover",
         "action_flag": 2,
@@ -1326,8 +1581,13 @@
     "pk": 36,
     "fields": {
         "action_time": "2016-07-28T10:46:29.572Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "2",
         "object_repr": "Smartphone",
         "action_flag": 2,
@@ -1339,8 +1599,13 @@
     "pk": 37,
     "fields": {
         "action_time": "2016-07-28T10:46:57.240Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "admin@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "1",
         "object_repr": "Laptop",
         "action_flag": 2,
