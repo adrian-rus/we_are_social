@@ -70,8 +70,8 @@ urlpatterns = [
     url(r'^threads/polls/(?P<pk>[\d]+)$', api_views.PollInstanceView.as_view()),
     url(r'^threads/polls/vote/(?P<thread_id>\d+)$', api_views.VoteCreateView.as_view(), name='create_vote'),
     url(r'^threads/$', api_views.ThreadCreateView.as_view(), name='threads_view'),
-    url(r'^threads/post/update/(?P<pk>[\d+]+)/$', thread_api_views.PostUpdateView.as_view(), name='update_post'),
-    url(r'^threads/post/delete/(?P<pk>[\d+]+)/$', thread_api_views.PostDeleteView.as_view(), name='delete_post'),
+    # url(r'^threads/post/update/(?P<pk>[\d+]+)/$', thread_api_views.PostUpdateView.as_view(), name='update_post'),
+    # url(r'^threads/post/delete/(?P<pk>[\d+]+)/$', thread_api_views.PostDeleteView.as_view(), name='delete_post'),
 
 
 ]
