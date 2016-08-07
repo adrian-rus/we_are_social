@@ -18,6 +18,7 @@ It has been created using Pycharm and:
 - Uses Bootstrap and Font Awesome for responsiveness
 - Uses jQuery for animations
 - Tinymce JavaScript for creating posts on the forum
+- Deployed to Heroku
 
 The design is simple and flat, responsive and easy to understand.
 
