@@ -9,6 +9,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "9ahk4wcdk843lwvy7h6lmqj4bsub2xqz",
+    "fields": {
+        "session_data": "NDA4NjkwNGNiNjc5OGU1OGI1YTY4NTdkNmEyYjMxZGY3ZTkzMjg5ZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjAwYmQ3NmYxNzA5OGNhZjZiYmFjYTI1Mzk4NDQ0OThiN2QwN2Y4NWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+        "expire_date": "2016-08-21T08:24:33.037Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "au4z1ecamwpiizwitl295ruvfsvzodfv",
     "fields": {
         "session_data": "YmExYWRkMWQ3YzQwZDMxZjlkZjZiZWExNTEzZWNmMDQ2MDFhOTg3NDp7Il9hdXRoX3VzZXJfaGFzaCI6IjE2MTUwZjExN2U1OTFhYmY0MTY3OWYyZjNiMWY2MTBjNjU0MTkyNTgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
@@ -65,10 +73,9 @@
 },
 {
     "model": "accounts.user",
-    "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$20000$clfExk7lx4TZ$cX6lUNOjpnTut+Ubee3tCjyT3kLJQMn8Yv4L00B5fRg=",
-        "last_login": "2016-07-30T17:43:23.522Z",
+        "password": "pbkdf2_sha256$24000$zf8MzV5G69Qk$jfuoYhAsPSLs5Q3PLMFTxxovLZmmsI4cTTZeWLjFP/k=",
+        "last_login": "2016-08-07T08:24:32.921Z",
         "is_superuser": true,
         "username": "admin@mail.com",
         "first_name": "",
@@ -84,7 +91,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$24000$UU7Q3EE5Gdtv$fg0FfUDD7VXqUw6jrvbGHhzB2epRlzsUipcEwd2lKto=",
         "last_login": "2016-07-27T17:34:41.483Z",
@@ -103,7 +109,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$24000$A75B04PywEPy$hTAPbnohpS6E4d31HowCUFYIywts/IvexDasgS23g5A=",
         "last_login": "2016-07-15T11:29:52.158Z",
@@ -122,7 +127,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$24000$BxvLRrqOvHGF$UgwtdnU9bTTT3FZ6sl8U1/XHYY2tm3rj0b4TzOtDrII=",
         "last_login": "2016-07-14T12:36:56.444Z",
@@ -141,7 +145,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 5,
     "fields": {
         "password": "pbkdf2_sha256$24000$wnINgGa0lyzX$2re/oGzQUyBSpdi/EsMsjSA65MAoFTIWHMvLg5se03c=",
         "last_login": "2016-07-28T12:23:54.365Z",
@@ -160,7 +163,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 6,
     "fields": {
         "password": "pbkdf2_sha256$24000$EPogiY4yqjGA$Ye/op1AFfy2aC6SWbGaFCgsirmvE8AQph+f5Wat5pgA=",
         "last_login": "2016-07-28T11:33:05.767Z",
@@ -179,7 +181,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 7,
     "fields": {
         "password": "pbkdf2_sha256$20000$4FjUKg9lOxp4$dgFwe+vDHjkMcLz913KwQhlu6fJeyWPYYiz+14NdyaI=",
         "last_login": "2016-07-29T11:05:19.144Z",
@@ -198,7 +199,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 8,
     "fields": {
         "password": "pbkdf2_sha256$24000$M0tHYIFMmvWp$XaEeo+ygOlVlU44pISF+gLU0Xh0U2RTmS+LyOAfc7Ak=",
         "last_login": null,
@@ -217,7 +217,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$24000$QozLO1yxOJ4A$1xyiu1FDhfrd5FliVepjwbScbPACUDaHPDj/CWAaIZo=",
         "last_login": "2016-07-29T10:09:14.510Z",
@@ -236,7 +235,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 10,
     "fields": {
         "password": "pbkdf2_sha256$24000$rnghG0rWQCKv$Dpwu/fTGERfNzsQgDTVhF/FVvB3WBPwSKzqYzTMW8AE=",
         "last_login": null,
@@ -255,7 +253,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 11,
     "fields": {
         "password": "pbkdf2_sha256$24000$Oda7o1yMO3lF$aiWFb0qJ2A223dIsGjmpa/yJfCDMIS9mLHjcB9I+3t4=",
         "last_login": "2016-07-29T10:12:31.581Z",
@@ -274,7 +271,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 12,
     "fields": {
         "password": "pbkdf2_sha256$24000$m0LTJIefNIvo$OEOauFJ4R2w9AaXMp3MuKywTSSX9wVoOoRDqSH+rWFc=",
         "last_login": "2016-07-29T10:20:43.343Z",
@@ -356,66 +352,41 @@
 },
 {
     "model": "reusable_blog.post",
-    "pk": 1,
+    "pk": 5,
     "fields": {
-        "author": [
-            "admin@mail.com"
-        ],
+        "author": 1,
         "title": "Blog post 1",
-        "content": "Blog post 1\r\nBlog post 1\r\nBlog post 1\r\nBlog post 1\r\nBlog post 1",
-        "created_date": "2016-07-12T12:36:53.010Z",
-        "published_date": "2016-07-12T12:36:45Z",
-        "views": 3,
-        "tag": "blog",
-        "image": ""
+        "content": "Offal messenger bag forage, chicharrones salvia fugiat aesthetic roof party nostrud pariatur. Deep v banjo forage incididunt cardigan, ex leggings ea neutra man braid sapiente lomo. Gastropub master cleanse 8-bit celiac cornhole. Tofu disrupt portland iPhone enim, mumblecore blog next level tattooed. Commodo man bun DIY biodiesel. Etsy art party tofu aliqua keffiyeh kinfolk 90's tempor. Jean shorts tousled squid messenger bag, seitan crucifix 3 wolf moon church-key minim blue bottle schlitz sed taxidermy hashtag.\r\n\r\nCronut ea messenger bag tousled, plaid assumenda exercitation officia art party. Microdosing voluptate hashtag stumptown. Chicharrones +1 consectetur, asymmetrical XOXO sunt ramps eu chillwave. Velit distillery 8-bit before they sold out dolore literally, chia ea eu aliqua. Deserunt sunt four dollar toast, ethical street art locavore fugiat aute meggings tempor flannel sed 3 wolf moon. Laborum church-key direct trade, sartorial ea franzen eu thundercats. Normcore migas farm-to-table, austin aesthetic stumptown ugh vegan.",
+        "created_date": "2016-08-07T08:39:00.668Z",
+        "published_date": "2016-07-28T08:38:53Z",
+        "views": 1,
+        "tag": "hipster"
     }
 },
 {
     "model": "reusable_blog.post",
-    "pk": 2,
+    "pk": 6,
     "fields": {
-        "author": [
-            "admin1@mail.com"
-        ],
+        "author": 2,
         "title": "Blog post 2",
-        "content": "Blog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2\r\nBlog post 2",
-        "created_date": "2016-07-12T12:37:35.128Z",
-        "published_date": "2016-07-11T00:00:00Z",
-        "views": 3,
-        "tag": "blog",
-        "image": ""
-    }
-},
-{
-    "model": "reusable_blog.post",
-    "pk": 3,
-    "fields": {
-        "author": [
-            "admin@mail.com"
-        ],
-        "title": "Blog post 3",
-        "content": "Blog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3\r\nBlog post 3",
-        "created_date": "2016-07-28T09:30:45.988Z",
-        "published_date": "2016-07-28T09:30:45.981Z",
-        "views": 9,
-        "tag": null,
-        "image": "images/12920256_867551570034282_6464429908531233786_n.jpg"
-    }
-},
-{
-    "model": "reusable_blog.post",
-    "pk": 4,
-    "fields": {
-        "author": [
-            "admin@mail.com"
-        ],
-        "title": "Blog post 4",
-        "content": "Blog post 4 Blog post 4Blog post 4 Blog post 4 Blog post 4",
-        "created_date": "2016-07-28T13:40:34.050Z",
-        "published_date": "2016-07-28T13:40:34.046Z",
+        "content": "Kogi anim velit, officia butcher dreamcatcher put a bird on it schlitz. Tousled sustainable waistcoat, swag ullamco celiac retro kitsch cliche squid keffiyeh whatever distillery. Authentic pinterest chillwave, cred affogato dolor mustache trust fund food truck hashtag williamsburg microdosing vinyl. Plaid brooklyn helvetica mlkshk actually. DIY forage XOXO, migas marfa vegan direct trade wayfarers eu qui seitan man bun. Quis cred you probably haven't heard of them ennui poutine blog, marfa in next level wayfarers butcher. Venmo pickled fap stumptown non.\r\n\r\nSmall batch consequat ugh aesthetic, pug deep v cronut blog incididunt tacos. Tousled roof party nisi scenester, banjo adipisicing chia post-ironic. Fanny pack vegan dolore tacos do, narwhal cold-pressed etsy kale chips man braid proident yuccie. Tempor leggings commodo est photo booth. Seitan roof party veniam, brunch voluptate nostrud quinoa eu PBR&B id commodo neutra actually tote bag. Commodo quis direct trade artisan. VHS selfies man braid plaid tofu.",
+        "created_date": "2016-08-07T08:41:31.030Z",
+        "published_date": "2016-08-07T08:41:28Z",
         "views": 2,
-        "tag": null,
-        "image": "images/BBtaWQN.png"
+        "tag": ""
+    }
+},
+{
+    "model": "reusable_blog.post",
+    "pk": 7,
+    "fields": {
+        "author": 7,
+        "title": "Blog post 3",
+        "content": "Church-key YOLO gluten-free wayfarers messenger bag hammock shoreditch, quinoa kickstarter chia master cleanse gastropub put a bird on it. Lomo salvia migas, pinterest direct trade yuccie master cleanse tote bag letterpress. Chicharrones sartorial paleo pour-over narwhal, iPhone pitchfork synth keffiyeh cronut. Chicharrones iPhone cold-pressed, synth crucifix helvetica tote bag actually man bun shoreditch pabst forage narwhal. Tacos occupy aesthetic affogato. Chartreuse DIY flannel hashtag letterpress vice. Butcher readymade beard, selfies umami next level DIY pop-up deep v chia master cleanse listicle church-key authentic.\r\n\r\nXOXO cred 3 wolf moon lo-fi, narwhal paleo biodiesel before they sold out sartorial skateboard crucifix. Master cleanse blog hammock semiotics, lomo sustainable kinfolk. Synth bespoke taxidermy, authentic 90's paleo kale chips pop-up pug. Wolf bitters cliche pabst. You probably haven't heard of them tattooed tacos, kinfolk photo booth intelligentsia whatever flexitarian direct trade chillwave etsy scenester. Tofu microdosing fap, godard migas neutra meh aesthetic freegan ramps gluten-free cold-pressed taxidermy locavore paleo. Aesthetic wolf 3 wolf moon, lo-fi vinyl taxidermy fashion axe pabst crucifix.",
+        "created_date": "2016-08-07T09:19:28.453Z",
+        "published_date": "2016-08-07T09:19:26Z",
+        "views": 1,
+        "tag": ""
     }
 },
 {
@@ -431,9 +402,7 @@
     "pk": 6,
     "fields": {
         "name": "Test Thread 2",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "subject": 1,
         "created_at": "2016-07-04T23:56:18.339Z"
     }
@@ -443,9 +412,7 @@
     "pk": 7,
     "fields": {
         "name": "Cars",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "subject": 1,
         "created_at": "2016-07-13T09:33:45.974Z"
     }
@@ -455,9 +422,7 @@
     "pk": 8,
     "fields": {
         "name": "Video Games",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "subject": 1,
         "created_at": "2016-07-13T10:50:58.762Z"
     }
@@ -467,9 +432,7 @@
     "pk": 9,
     "fields": {
         "name": "Phones",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "subject": 1,
         "created_at": "2016-07-15T11:23:26.284Z"
     }
@@ -479,9 +442,7 @@
     "pk": 10,
     "fields": {
         "name": "Laptops",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "subject": 1,
         "created_at": "2016-07-26T10:46:20.527Z"
     }
@@ -492,9 +453,7 @@
     "fields": {
         "thread": 6,
         "comment": "<p>Hey World, how are things?</p>\r\n<p>:D B)</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-04T23:56:18.339Z"
     }
 },
@@ -504,9 +463,7 @@
     "fields": {
         "thread": 7,
         "comment": "<p>Cars</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-13T09:33:45.974Z"
     }
 },
@@ -516,9 +473,7 @@
     "fields": {
         "thread": 7,
         "comment": "<p>This is interesting</p>",
-        "user": [
-            "admin2@mail.com"
-        ],
+        "user": 3,
         "created_at": "2016-07-13T10:30:59.182Z"
     }
 },
@@ -528,9 +483,7 @@
     "fields": {
         "thread": 8,
         "comment": "<p>Which is the best video game?</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-13T10:50:58.762Z"
     }
 },
@@ -540,9 +493,7 @@
     "fields": {
         "thread": 8,
         "comment": "<p>Gta 5</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-13T11:15:16.722Z"
     }
 },
@@ -552,9 +503,7 @@
     "fields": {
         "thread": 8,
         "comment": "<p>I'd say the witcher</p>",
-        "user": [
-            "admin1@mail.com"
-        ],
+        "user": 2,
         "created_at": "2016-07-14T13:12:19.185Z"
     }
 },
@@ -564,9 +513,7 @@
     "fields": {
         "thread": 8,
         "comment": "<p>The witcher :D</p>",
-        "user": [
-            "admin2@mail.com"
-        ],
+        "user": 3,
         "created_at": "2016-07-14T13:13:25.528Z"
     }
 },
@@ -576,9 +523,7 @@
     "fields": {
         "thread": 9,
         "comment": "<p>Phones - best of 2016</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-15T11:23:26.284Z"
     }
 },
@@ -588,9 +533,7 @@
     "fields": {
         "thread": 7,
         "comment": "<p>worked like a charm :D</p>",
-        "user": [
-            "admin1@mail.com"
-        ],
+        "user": 2,
         "created_at": "2016-07-18T13:06:22.268Z"
     }
 },
@@ -600,9 +543,7 @@
     "fields": {
         "thread": 10,
         "comment": "<p>laptops</p>",
-        "user": [
-            "admin@mail.com"
-        ],
+        "user": 1,
         "created_at": "2016-07-26T10:46:20.527Z"
     }
 },
@@ -612,9 +553,7 @@
     "fields": {
         "thread": 6,
         "comment": "<p>YOLO</p>",
-        "user": [
-            "admin1@mail.com"
-        ],
+        "user": 2,
         "created_at": "2016-07-26T12:57:00.507Z"
     }
 },
@@ -624,9 +563,7 @@
     "fields": {
         "thread": 8,
         "comment": "<p>I voted Witcher ;) B)</p>",
-        "user": [
-            "admin123@mail.com"
-        ],
+        "user": 6,
         "created_at": "2016-07-27T18:12:13.621Z"
     }
 },
@@ -636,9 +573,7 @@
     "fields": {
         "thread": 6,
         "comment": "<p>hello! :)</p>",
-        "user": [
-            "admin5@mail.com"
-        ],
+        "user": 5,
         "created_at": "2016-07-28T12:37:09.440Z"
     }
 },
@@ -776,9 +711,7 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": [
-            "admin3@mail.com"
-        ]
+        "user": 4
     }
 },
 {
@@ -787,9 +720,7 @@
     "fields": {
         "poll": 1,
         "subject": 2,
-        "user": [
-            "admin2@mail.com"
-        ]
+        "user": 3
     }
 },
 {
@@ -798,9 +729,7 @@
     "fields": {
         "poll": 1,
         "subject": 3,
-        "user": [
-            "admin@mail.com"
-        ]
+        "user": 1
     }
 },
 {
@@ -809,9 +738,7 @@
     "fields": {
         "poll": 2,
         "subject": 4,
-        "user": [
-            "admin@mail.com"
-        ]
+        "user": 1
     }
 },
 {
@@ -820,9 +747,7 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": [
-            "admin1@mail.com"
-        ]
+        "user": 2
     }
 },
 {
@@ -831,9 +756,7 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": [
-            "admin2@mail.com"
-        ]
+        "user": 3
     }
 },
 {
@@ -842,9 +765,7 @@
     "fields": {
         "poll": 3,
         "subject": 7,
-        "user": [
-            "admin@mail.com"
-        ]
+        "user": 1
     }
 },
 {
@@ -853,9 +774,7 @@
     "fields": {
         "poll": 3,
         "subject": 8,
-        "user": [
-            "admin1@mail.com"
-        ]
+        "user": 2
     }
 },
 {
@@ -864,9 +783,7 @@
     "fields": {
         "poll": 3,
         "subject": 7,
-        "user": [
-            "admin2@mail.com"
-        ]
+        "user": 3
     }
 },
 {
@@ -875,9 +792,7 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": [
-            "admin1@mail.com"
-        ]
+        "user": 2
     }
 },
 {
@@ -886,9 +801,7 @@
     "fields": {
         "poll": 4,
         "subject": 11,
-        "user": [
-            "admin@mail.com"
-        ]
+        "user": 1
     }
 },
 {
@@ -897,9 +810,7 @@
     "fields": {
         "poll": 4,
         "subject": 12,
-        "user": [
-            "admin1@mail.com"
-        ]
+        "user": 2
     }
 },
 {
@@ -908,9 +819,7 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": [
-            "admin123@mail.com"
-        ]
+        "user": 6
     }
 },
 {
@@ -919,9 +828,7 @@
     "fields": {
         "poll": 2,
         "subject": 5,
-        "user": [
-            "admin123@mail.com"
-        ]
+        "user": 6
     }
 },
 {
@@ -930,9 +837,7 @@
     "fields": {
         "poll": 4,
         "subject": 11,
-        "user": [
-            "admin123@mail.com"
-        ]
+        "user": 6
     }
 },
 {
@@ -941,9 +846,7 @@
     "fields": {
         "poll": 2,
         "subject": 6,
-        "user": [
-            "admin5@mail.com"
-        ]
+        "user": 5
     }
 },
 {
@@ -951,13 +854,8 @@
     "pk": 1,
     "fields": {
         "action_time": "2016-07-04T15:46:17.800Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "1",
         "object_repr": "Wired UK",
         "action_flag": 1,
@@ -969,13 +867,8 @@
     "pk": 2,
     "fields": {
         "action_time": "2016-07-04T15:46:35.642Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "2",
         "object_repr": "PC World",
         "action_flag": 1,
@@ -987,13 +880,8 @@
     "pk": 3,
     "fields": {
         "action_time": "2016-07-04T15:46:58.768Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "3",
         "object_repr": "Stuff",
         "action_flag": 1,
@@ -1005,13 +893,8 @@
     "pk": 4,
     "fields": {
         "action_time": "2016-07-04T15:47:42.191Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "1",
         "object_repr": "Laptop",
         "action_flag": 1,
@@ -1023,13 +906,8 @@
     "pk": 5,
     "fields": {
         "action_time": "2016-07-04T15:48:07.372Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "2",
         "object_repr": "Smartphone",
         "action_flag": 1,
@@ -1041,13 +919,8 @@
     "pk": 6,
     "fields": {
         "action_time": "2016-07-04T15:48:32.060Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "3",
         "object_repr": "Phone cover",
         "action_flag": 1,
@@ -1059,13 +932,8 @@
     "pk": 7,
     "fields": {
         "action_time": "2016-07-04T15:48:49.426Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "4",
         "object_repr": "Tablet",
         "action_flag": 1,
@@ -1077,13 +945,8 @@
     "pk": 8,
     "fields": {
         "action_time": "2016-07-04T15:49:14.686Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
+        "user": 1,
+        "content_type": 14,
         "object_id": "1",
         "object_repr": "Testing",
         "action_flag": 1,
@@ -1095,13 +958,8 @@
     "pk": 9,
     "fields": {
         "action_time": "2016-07-04T15:49:27.920Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
+        "user": 1,
+        "content_type": 14,
         "object_id": "2",
         "object_repr": "AOB",
         "action_flag": 1,
@@ -1113,13 +971,8 @@
     "pk": 10,
     "fields": {
         "action_time": "2016-07-04T15:49:46.783Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
+        "user": 1,
+        "content_type": 14,
         "object_id": "3",
         "object_repr": "Develop",
         "action_flag": 1,
@@ -1131,13 +984,8 @@
     "pk": 11,
     "fields": {
         "action_time": "2016-07-04T23:55:40.061Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "thread"
-        ],
+        "user": 1,
+        "content_type": 15,
         "object_id": "5",
         "object_repr": "Thread object",
         "action_flag": 3,
@@ -1149,13 +997,8 @@
     "pk": 12,
     "fields": {
         "action_time": "2016-07-12T12:34:07.956Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "thread"
-        ],
+        "user": 1,
+        "content_type": 15,
         "object_id": "1",
         "object_repr": "Thread object",
         "action_flag": 3,
@@ -1167,13 +1010,8 @@
     "pk": 13,
     "fields": {
         "action_time": "2016-07-12T12:36:53.017Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "reusable_blog",
-            "post"
-        ],
+        "user": 1,
+        "content_type": 13,
         "object_id": "1",
         "object_repr": "Blog post 1",
         "action_flag": 1,
@@ -1185,13 +1023,8 @@
     "pk": 14,
     "fields": {
         "action_time": "2016-07-12T12:37:35.155Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "reusable_blog",
-            "post"
-        ],
+        "user": 1,
+        "content_type": 13,
         "object_id": "2",
         "object_repr": "Blog post 2",
         "action_flag": 1,
@@ -1203,13 +1036,8 @@
     "pk": 15,
     "fields": {
         "action_time": "2016-07-14T13:20:07.769Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "sites",
-            "site"
-        ],
+        "user": 1,
+        "content_type": 6,
         "object_id": "4",
         "object_repr": "localhost",
         "action_flag": 1,
@@ -1221,13 +1049,8 @@
     "pk": 16,
     "fields": {
         "action_time": "2016-07-14T13:20:20.451Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/about/ -- About",
         "action_flag": 1,
@@ -1239,13 +1062,8 @@
     "pk": 17,
     "fields": {
         "action_time": "2016-07-14T13:21:29.933Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/contact/ -- Contact",
         "action_flag": 1,
@@ -1257,13 +1075,8 @@
     "pk": 18,
     "fields": {
         "action_time": "2016-07-14T13:27:03.113Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/pages/about/ -- About",
         "action_flag": 2,
@@ -1275,13 +1088,8 @@
     "pk": 19,
     "fields": {
         "action_time": "2016-07-14T13:27:13.660Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/pages/contact/ -- Contact",
         "action_flag": 2,
@@ -1293,13 +1101,8 @@
     "pk": 20,
     "fields": {
         "action_time": "2016-07-14T13:36:08.195Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "sites",
-            "site"
-        ],
+        "user": 1,
+        "content_type": 6,
         "object_id": "4",
         "object_repr": "localhost:8000",
         "action_flag": 2,
@@ -1311,13 +1114,8 @@
     "pk": 21,
     "fields": {
         "action_time": "2016-07-26T13:03:10.990Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/pages/about/ -- <h2>About</h2>",
         "action_flag": 2,
@@ -1329,13 +1127,8 @@
     "pk": 22,
     "fields": {
         "action_time": "2016-07-26T13:03:56.494Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 2,
@@ -1347,13 +1140,8 @@
     "pk": 23,
     "fields": {
         "action_time": "2016-07-26T13:05:34.367Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1365,13 +1153,8 @@
     "pk": 24,
     "fields": {
         "action_time": "2016-07-27T14:00:54.837Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 2,
@@ -1383,13 +1166,8 @@
     "pk": 25,
     "fields": {
         "action_time": "2016-07-27T14:04:50.926Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1401,13 +1179,8 @@
     "pk": 26,
     "fields": {
         "action_time": "2016-07-27T14:07:11.040Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 2,
@@ -1419,13 +1192,8 @@
     "pk": 27,
     "fields": {
         "action_time": "2016-07-27T14:20:22.436Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "2",
         "object_repr": "/pages/contact/ -- <div class=\"container\"><h2>Contact</h2></div>",
         "action_flag": 3,
@@ -1437,13 +1205,8 @@
     "pk": 28,
     "fields": {
         "action_time": "2016-07-27T14:20:31.178Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "flatpages",
-            "flatpage"
-        ],
+        "user": 1,
+        "content_type": 7,
         "object_id": "1",
         "object_repr": "/pages/about/ -- <div class=\"container\"><h2>About</h2></div>",
         "action_flag": 3,
@@ -1455,13 +1218,8 @@
     "pk": 29,
     "fields": {
         "action_time": "2016-07-27T18:00:05.523Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
+        "user": 1,
+        "content_type": 14,
         "object_id": "3",
         "object_repr": "Develop",
         "action_flag": 3,
@@ -1473,13 +1231,8 @@
     "pk": 30,
     "fields": {
         "action_time": "2016-07-27T18:00:05.646Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
+        "user": 1,
+        "content_type": 14,
         "object_id": "2",
         "object_repr": "AOB",
         "action_flag": 3,
@@ -1491,13 +1244,8 @@
     "pk": 31,
     "fields": {
         "action_time": "2016-07-28T10:44:08.664Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "3",
         "object_repr": "Social Power",
         "action_flag": 2,
@@ -1509,13 +1257,8 @@
     "pk": 32,
     "fields": {
         "action_time": "2016-07-28T10:44:29.738Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "2",
         "object_repr": "Entrepreneur",
         "action_flag": 2,
@@ -1527,13 +1270,8 @@
     "pk": 33,
     "fields": {
         "action_time": "2016-07-28T10:44:43.193Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
+        "user": 1,
+        "content_type": 11,
         "object_id": "1",
         "object_repr": "Business UK",
         "action_flag": 2,
@@ -1545,13 +1283,8 @@
     "pk": 34,
     "fields": {
         "action_time": "2016-07-28T10:45:30.555Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "4",
         "object_repr": "Tablet",
         "action_flag": 2,
@@ -1563,13 +1296,8 @@
     "pk": 35,
     "fields": {
         "action_time": "2016-07-28T10:45:51.247Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "3",
         "object_repr": "Phone cover",
         "action_flag": 2,
@@ -1581,13 +1309,8 @@
     "pk": 36,
     "fields": {
         "action_time": "2016-07-28T10:46:29.572Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "2",
         "object_repr": "Smartphone",
         "action_flag": 2,
@@ -1599,17 +1322,116 @@
     "pk": 37,
     "fields": {
         "action_time": "2016-07-28T10:46:57.240Z",
-        "user": [
-            "admin@mail.com"
-        ],
-        "content_type": [
-            "products",
-            "product"
-        ],
+        "user": 1,
+        "content_type": 9,
         "object_id": "1",
         "object_repr": "Laptop",
         "action_flag": 2,
         "change_message": "Changed description."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2016-08-01T12:21:45.647Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2016-08-07T08:37:42.578Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Blog post 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2016-08-07T08:37:42.783Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Blog post 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2016-08-07T08:37:42.926Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Blog post 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2016-08-07T08:37:43.050Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Blog post 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2016-08-07T08:39:00.675Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Blog post 1",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2016-08-07T08:41:31.038Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Blog post 2",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2016-08-07T09:19:28.464Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Blog post 3",
+        "action_flag": 1,
+        "change_message": "Added."
     }
 }
 ]
